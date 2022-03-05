@@ -76,7 +76,8 @@ std::string getClassName(const Cfg& cfg)
 {
     auto result = cfg.className;
     if (result.empty()){
-        result = cfg.input.stem();
+		std::filesystem::path path = cfg.input.stem();
+        result = path.string();
         if (cfg.classPascalcase)
             result = htcpp::utils::toPascalCase(result);
         if (cfg.classSnakecase)
