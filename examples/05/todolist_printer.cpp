@@ -12,7 +12,7 @@ struct PageParams{
 };
 HTCPP_CONFIG(PageParams);
 
-int main()
+int main(void)
 {	
     auto pageParams = PageParams{};	
     auto page = htcpp::loadTemplate<PageParams>("libtodolist.so");

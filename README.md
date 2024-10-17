@@ -34,7 +34,7 @@ This command creates the `todolist.h` file in the current working directory. All
 #include <string>
 #include <vector>
 
-int main()
+int main(void)
 {	
     struct PageParams{
         struct Task{
@@ -382,7 +382,7 @@ std::vector<Task> tasks = {{"laundry", true}, {"cooking", false}};
 };
 HTCPP_CONFIG(PageParams);
 
-int main()
+int main(void)
 {
 auto pageParams = PageParams{};
 auto page = htcpp::loadTemplate<PageParams>("libtodolist.so");

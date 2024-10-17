@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-int main()
+int main(void)
 {	
 	struct PageParams{
 		struct Task{
